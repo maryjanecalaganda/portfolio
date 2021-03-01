@@ -1,2 +1,0 @@
-(this["webpackJsonpbio-data"]=this["webpackJsonpbio-data"]||[]).push([[0],{9:function(t,e,n){"use strict";n.r(e);var c=n(1),r=n.n(c),i=n(3),o=n.n(i),a=n(0);var s=function(){return Object(a.jsx)("div",{children:"hello"})};o.a.render(Object(a.jsx)(r.a.StrictMode,{children:Object(a.jsx)(s,{})}),document.getElementById("root"))}},[[9,1,2]]]);
-//# sourceMappingURL=main.ef17b93c.chunk.js.map
