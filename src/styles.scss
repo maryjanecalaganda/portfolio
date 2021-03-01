@@ -1,0 +1,171 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.main-app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: rgb(33, 33, 33);
+  background: radial-gradient(
+    circle,
+    rgba(33, 33, 33, 1) 0%,
+    rgba(0, 0, 0, 1) 39%
+  );
+  background-size: 200% 200%;
+  animation: bg infinite 5s ease-in-out alternate;
+  color: white;
+  .img {
+    position: relative;
+    width: 20rem;
+    border: 0;
+
+    .li {
+      .ul {
+        transition: all ease-in-out 200ms;
+        cursor: pointer;
+        position: absolute;
+        width: 10rem;
+        padding: 0.2rem 0.5rem;
+        font-size: 25px;
+        margin: 5px auto;
+        font-family: 'Poppins', sans-serif;
+        border-bottom: 1px solid rgb(255, 255, 255);
+
+        &:first-child {
+          top: 19.5%;
+          right: -48%;
+          transform: rotate(-7deg);
+        }
+        &:nth-child(2) {
+          top: 35%;
+          right: -51%;
+          transform: rotate(0deg);
+        }
+        &:nth-child(3) {
+          top: 50%;
+          right: -51%;
+          transform: rotate(7deg);
+        }
+        &:nth-child(4) {
+          top: 65%;
+          right: -47%;
+          transform: rotate(13deg);
+        }
+
+        &:hover {
+          transform: rotateY(360deg);
+          &:nth-child(1) {
+            border-bottom: 3px solid rgb(252, 106, 106);
+            font-family: 'Lobster Two', cursive;
+            font-size: 1.5rem;
+          }
+          &:nth-child(2) {
+            transform: scale(1.01);
+            border-bottom: 3px solid rgb(100, 222, 252);
+            font-family: 'Lobster Two', cursive;
+            font-size: 1.5rem;
+          }
+          &:nth-child(3) {
+            transform: scale(1.01);
+            border-bottom: 3px solid rgb(110, 255, 110);
+            font-family: 'Lobster Two', cursive;
+            font-size: 1.3rem;
+          }
+          &:nth-child(4) {
+            transform: scale(1.01);
+            border-bottom: 3px solid rgb(255, 255, 84);
+            font-family: 'Lobster Two', cursive;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+    img {
+      width: 100%;
+      height: 20rem;
+      border-radius: 50%;
+      animation: border-pic infinite alternate 5s ease-in-out;
+    }
+  }
+  .name {
+    h1 {
+      font-size: 2.5rem;
+      display: flex;
+      justify-content: center;
+      font-weight: bolder;
+      font-family: 'Lobster Two', cursive;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+@keyframes border-pic {
+  0% {
+    border: 3px solid rgb(252, 106, 106);
+  }
+  25% {
+    border: 3px solid rgb(100, 222, 252);
+  }
+  50% {
+    border: 3px solid rgb(110, 255, 110);
+  }
+  100% {
+    border: 3px solid rgb(255, 255, 84);
+  }
+}
+
+@keyframes bg {
+  0% {
+    background-position: 0 25%;
+  }
+  25% {
+    background-position: 50% 25%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-app {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    .img {
+      width: 13rem;
+      .li {
+        .ul {
+          position: initial;
+          display: block;
+          margin: 0 auto;
+          transform: rotate(0) !important;
+          width: 100%;
+          font-size: 23px;
+        }
+      }
+      img {
+        height: 13rem;
+      }
+    }
+    .name {
+      h1 {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
