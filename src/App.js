@@ -6,17 +6,15 @@ import './skills.scss'
 
 import profile from './assets/profile.jpg'
 import section3 from './assets/section 3.jpg'
+import section2 from './assets/section 2.jpg'
+import section1 from './assets/section 1.jpg'
 
 import { Parallax } from 'react-parallax'
 
 function App() {
   return (
     <div>
-      <Parallax
-        className="main-app"
-        strength={300}
-        bgImage="https://c4.wallpaperflare.com/wallpaper/36/14/561/minimalism-minimalist-mountains-landscape-wallpaper-preview.jpg"
-      >
+      <Parallax className="main-app" strength={300} bgImage={section1}>
         <div className="img">
           <img src={profile} alt={profile} />
           <div className="li">
@@ -39,10 +37,7 @@ function App() {
         </div>
       </Parallax>
       <section id="introduction" className="intro"></section>
-      <Parallax
-        strength={300}
-        bgImage="https://assets.hongkiat.com/uploads/minimalist-dekstop-wallpapers/4k/original/10.jpg"
-      >
+      <Parallax strength={300} bgImage={section2}>
         <section id="education" className="educ"></section>
       </Parallax>
       <section id="skills" className="skills"></section>
