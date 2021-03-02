@@ -2,5 +2,49 @@
   width: 100%;
   height: 100vh;
   margin: 0;
-  padding: 0;
+  color: white;
+  font-family: 'Poppins';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .educ-info {
+    h1 {
+      font-size: 30px;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    hr {
+      margin: 1rem 0;
+    }
+    p {
+      line-height: 2;
+      text-align: left;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .educ {
+    padding: 20rem 1.5rem;
+
+    .educ-info {
+      position: 1;
+      margin: 1rem 0;
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 15px;
+        span {
+          font-size: 15px;
+        }
+      }
+    }
+  }
 }
